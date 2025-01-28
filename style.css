@@ -22,6 +22,16 @@ main {
 
 h1 {
   font-size: 3rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3{
+  font-size: 1.7rem;
+}
+
+p{
+  font-size: 1rem;
 }
 
 /* Forside */
@@ -56,16 +66,18 @@ h1 {
   grid-template-rows: subgrid;
   grid-row: span 5;
   padding: 10px;
-  background-color: darkgray;
+  background-color: rgb(219, 219, 219);
 }
 
 .produkt_img {
-  height: 400px;
+  height: 437px;
   object-fit: contain;
+  width: 100%;
 }
 
 a {
   color: black;
+  font-weight: bolder;
 }
 
 .inlin {
@@ -83,17 +95,17 @@ a {
 }
 
 .sold_out {
-  filter: grayscale(70%);
+  filter: grayscale(90%);
 }
 
 .text-box {
   position: absolute;
   top: 0px;
-  left: 14px;
+  left: 0px;
   background-color: black;
   color: white;
   padding: 10px;
-  font-size: 14px;
+  font-size: 22px;
   max-width: 200px;
 }
 
@@ -115,9 +127,16 @@ a {
 }
 
 .rabat {
-  background-color: crimson;
-  padding: 10px;
+  background-color: rgb(252, 4, 53);
+  padding: 10px 20px; 
   text-align: center;
+  display: inline-block;
+  color: white; 
+  font-weight: bold;
+}
+
+.rabat_pris{
+  color: rgb(255, 0, 51);
 }
 
 /* Produkt */
@@ -136,19 +155,27 @@ a {
 @media (max-width: 768px) {
   .product_list_containe {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 20px;
   }
 
   .text-box {
     position: absolute;
-    top: 40px;
+    top: 0px;
     left: 0px;
     background-color: black;
     color: white;
     padding: 10px;
-    font-size: 10px;
+    font-size: 15px;
     max-width: 200px;
   }
+
+  .produkt_img {
+  height: 495px;
+  object-fit: contain;
+  width: 100%;
 }
+
+}
+
