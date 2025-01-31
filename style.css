@@ -192,7 +192,7 @@ button{
   .text-box {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 25px;
     background-color: black;
     color: white;
     padding: 10px;
