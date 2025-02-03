@@ -75,7 +75,7 @@ p{
 .box {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 5;
+  grid-row: span 6;
   padding: 10px;
   background-color: rgb(219, 219, 219);
 }
