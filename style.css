@@ -180,8 +180,19 @@ button {
   background-color: rgb(251, 251, 251);
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 110px;
-  padding-right: 110px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#size{
+  background-color: rgb(251, 251, 251);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
   font-size: 1.5rem;
   margin-top: 10px;
   text-align: center;

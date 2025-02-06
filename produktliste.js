@@ -21,11 +21,16 @@ function showList(products) {
     <p>${product.category}</p>
     <div class="pris_container">
         <p>DKK ${product.price},-</p>
-        <p class="rabat ${product.discount ? "isonsale" : ""}">-${product.discount}%</p>
+
+        <!-- Vis rabatkasse altid, men vis rabatprocenten kun, hvis der er rabat -->
+        <p class="rabat ${product.discount ? "isonsale" : ""}">-${product.discount ? product.discount : 0}%</p>
+
+        <!-- Vis rabatpris kun, hvis der er rabat -->
+        ${product.discount ? `<p class="rabat_pris">NOW DKK ${(product.price - (product.discount / 100) * product.price).toFixed(2)},-</p>` : ""}
+        
     </div>
     <a href="produkt.html?product=${product.id}">Read more</a>
 </div>
-        
         `
     )
     .join("");
