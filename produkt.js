@@ -29,8 +29,23 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${myproduct}`)
                 <h2 class="hvid">${data.productdisplayname}</h2>
                 <h2 class="hvid">${data.variantname}</h2>
                 <p class="line">${data.brandname} - ${data.articletype}</p>
-                <button>Add to basket</button>
+                <label for="size">Vælg størrelse:</label>
+        <select id="size">
+            <option value="S">Small (S)</option>
+            <option value="M">Medium (M)</option>
+            <option value="L">Large (L)</option>
+            <option value="XL">Extra Large (XL)</option>
+        </select>
+        <button id="addToCart">Tilføj til kurv</button>
             </div>
-
-    `;
+        </div>
+        `;
   });
+document.getElementById("addToCart").addEventListener("click", function () {
+  const selectedSize = document.getElementById("size").value;
+  console.log("Valgt størrelse:", selectedSize);
+  alert(`Produkt tilføjet i størrelse ${selectedSize}`);
+});
+
+  
+
